@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { LayoutDashboard, Library, PlusSquare, Brain, LineChart, User, LogOut, Sparkles } from "lucide-react";
+import { LayoutDashboard, Library, Brain, LineChart, User, LogOut, Sparkles } from "lucide-react";
 import {
   Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
   SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarHeader, SidebarFooter, useSidebar,
@@ -8,13 +8,12 @@ import { useAuth } from "@/hooks/useAuth";
 import { useNavigate } from "@tanstack/react-router";
 
 const items = [
-  { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard, exact: true },
-  { title: "My Flashcards", url: "/dashboard/flashcards", icon: Library },
-  { title: "Create", url: "/dashboard/flashcards?new=1", icon: PlusSquare, match: "/dashboard/flashcards" },
-  { title: "Study Mode", url: "/dashboard/study", icon: Brain },
-  { title: "Quiz Mode", url: "/dashboard/quiz", icon: Sparkles },
-  { title: "Progress", url: "/dashboard/progress", icon: LineChart },
-  { title: "Profile", url: "/dashboard/profile", icon: User },
+  { title: "Dashboard", url: "/dashboard" as const, icon: LayoutDashboard, exact: true },
+  { title: "My Flashcards", url: "/dashboard/flashcards" as const, icon: Library },
+  { title: "Study Mode", url: "/dashboard/study" as const, icon: Brain },
+  { title: "Quiz Mode", url: "/dashboard/quiz" as const, icon: Sparkles },
+  { title: "Progress", url: "/dashboard/progress" as const, icon: LineChart },
+  { title: "Profile", url: "/dashboard/profile" as const, icon: User },
 ];
 
 export function AppSidebar() {
