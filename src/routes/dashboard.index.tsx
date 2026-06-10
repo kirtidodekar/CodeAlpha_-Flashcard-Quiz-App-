@@ -60,7 +60,7 @@ const barColors = ["#6366F1", "#8B5CF6", "#06B6D4", "#22C55E", "#F59E0B", "#EC48
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
-  show: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.4, ease: "easeOut" as const } }),
+  show: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.4, ease: [0.16, 1, 0.3, 1] } }),
 };
 
 function DashboardHome() {
