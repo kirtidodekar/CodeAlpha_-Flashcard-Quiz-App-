@@ -1,26 +1,26 @@
-type LovableErrorOptions = {
+type FlashcardErrorOptions = {
   mechanism?: "manual" | "onerror" | "unhandledrejection" | "react_error_boundary";
   handled?: boolean;
   severity?: "error" | "warning" | "info";
 };
 
-type LovableEvents = {
+type FlashcardEvents = {
   captureException?: (
     error: unknown,
     context?: Record<string, unknown>,
-    options?: LovableErrorOptions,
+    options?: FlashcardErrorOptions,
   ) => void;
 };
 
 declare global {
   interface Window {
-    __lovableEvents?: LovableEvents;
+    __flashcardEvents?: FlashcardEvents;
   }
 }
 
-export function reportLovableError(error: unknown, context: Record<string, unknown> = {}) {
+export function reportFlashcardError(error: unknown, context: Record<string, unknown> = {}) {
   if (typeof window === "undefined") return;
-  window.__lovableEvents?.captureException?.(
+  window.__flashcardEvents?.captureException?.(
     error,
     {
       source: "react_error_boundary",
