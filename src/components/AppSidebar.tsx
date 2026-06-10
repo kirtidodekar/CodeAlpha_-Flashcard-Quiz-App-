@@ -39,11 +39,11 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => {
-                const active = item.exact ? path === item.url : path === (item.url.split("?")[0]);
+                const active = item.exact ? path === item.url : path.startsWith(item.url);
                 return (
                   <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton asChild isActive={active}>
-                      <Link to={item.url.split("?")[0]} search={item.url.includes("?new=1") ? { new: "1" } as any : undefined}>
+                      <Link to={item.url}>
                         <item.icon className="h-4 w-4" />
                         {!collapsed && <span>{item.title}</span>}
                       </Link>
