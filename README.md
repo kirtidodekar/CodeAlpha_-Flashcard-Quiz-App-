@@ -2,7 +2,7 @@
 
 ## 🚀 Overview
 
-FlashMaster is a modern Flashcard Quiz Application developed for the CodeAlpha App Development Internship. It helps users create, manage, and study flashcards while tracking their learning progress through quizzes and analytics.
+FlashMaster is a modern and interactive Flashcard Quiz Application developed as part of the CodeAlpha App Development Internship. It helps users create, manage, and study flashcards while tracking their learning progress through quizzes and analytics.
 
 ## ✨ Features
 
@@ -18,10 +18,11 @@ FlashMaster is a modern Flashcard Quiz Application developed for the CodeAlpha A
 
 ## 🛠️ Tech Stack
 
-* React.js / Next.js
+* React.js
+* TypeScript
 * Tailwind CSS
-* Firebase Authentication
-* Firebase Firestore
+* Supabase
+* Vite
 * Framer Motion
 
 ## ⚙️ Installation
@@ -38,22 +39,22 @@ npm run dev
 
 ## 🎯 Key Functionalities
 
-* Secure user authentication
+* Secure authentication using Supabase
 * Flashcard CRUD operations
-* Interactive study experience
+* Interactive flashcard study experience
 * Quiz generation and score calculation
-* Progress tracking dashboard
-* Responsive and attractive UI
+* Learning progress tracking
+* Responsive and user-friendly UI
 
-## 🌟 Future Enhancements
+## 🔮 Future Enhancements
 
 * AI-generated flashcards
 * Leaderboards
 * Flashcard sharing
 * Offline support
 
-## 👩‍💻 Developed For
+### Developed For
 
-**CodeAlpha App Development Internship**
+CodeAlpha App Development Internship
+
 **Task 1: Flashcard Quiz App**
-
