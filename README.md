@@ -2,9 +2,9 @@
 
 ## 🌐 Live Demo
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://code-alpha-flashcard-quiz-app.vercel.app)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)]([https://code-alpha-flashcard-quiz-app.vercel.app)
 
-**Live URL:** [[https://code-alpha-flashcard-quiz-app.vercel.app](https://code-alpha-flashcard-quiz-app-self.vercel.app/)](https://code-alpha-flashcard-quiz-app.vercel.app)
+**Live URL:** [[https://code-alpha-flashcard-quiz-app.vercel.app]
 
 ## 🚀 Overview
 
