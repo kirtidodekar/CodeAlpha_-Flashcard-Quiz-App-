@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { listFlashcards, type Flashcard } from "@/lib/flashcards";
@@ -140,6 +140,7 @@ function FlashcardsPage() {
         <DialogContent>
           <DialogHeader>
             <DialogTitle>{editing ? "Edit Flashcard" : "New Flashcard"}</DialogTitle>
+            <DialogDescription>{editing ? "Update your flashcard details below." : "Create a new flashcard for your study deck."}</DialogDescription>
           </DialogHeader>
           <form onSubmit={onSubmit} className="space-y-4">
             <div className="space-y-2">
